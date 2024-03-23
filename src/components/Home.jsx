@@ -13,9 +13,7 @@ const Home = () => {
     const navigate = useNavigate()
 
     useEffect(()=>{
-         // Check if user is not authenticated (not logged in)
     if (!localStorage.getItem('token')) {
-        // Redirect user to the login page
         navigate('/login');
       }
     }, [navigate]
