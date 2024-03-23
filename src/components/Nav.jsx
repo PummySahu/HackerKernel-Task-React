@@ -9,7 +9,6 @@ const Nav = () => {
     navigate('/login');
   };
 
-  // Check if user is logged in
   const isLoggedIn = !!localStorage.getItem('token');
 
   return (
